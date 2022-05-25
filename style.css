@@ -1,17 +1,21 @@
 body {
-        font-family: Arial;
-        font-size: 10px;
-        margin: 18%;
-        background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/08/08/52199/dark-mode-18.jpg);
-        color: white;
+    font-family: Sans-Serif;
+    background-color: rgb(234,232,232);
+    margin: 17%;
 }
 
-.hi {
-    font-size: 38px;
+.container {
+    border-radius: 2%;
+    background-color: white;
+    padding: 5%;
 }
 
 .para {
     font-size: 20px;
+}
+
+.hi {
+    font-size: 38px;
 }
 
 .image {
@@ -20,8 +24,8 @@ body {
     width: 150px;
 }
 
-.linkedin {
+.photo {
     border-radius: 50%;
     height : 30px;
-    width: 30px;  
+    width: 30px;
 }
