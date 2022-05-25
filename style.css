@@ -1,8 +1,7 @@
 body {
     font-family: Sans-Serif;
     background-color: rgb(234,232,232);
-    margin-bottom: 5%;
-    margin-top: 6%;
+    margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -11,6 +10,20 @@ body {
     border-radius: 2%;
     background-color: white;
     padding: 5%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'photo photo photo'
+    'intro intro intro'
+    'link link link';
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.link {
+    grid-area: link;
 }
 
 .para {
@@ -25,10 +38,23 @@ body {
     border-radius: 50%;
     height : 150px;
     width: 150px;
+    grid-area: photo;
 }
 
 .photo {
     border-radius: 50%;
     height : 30px;
     width: 30px;
+}
+
+@media only screen and (max-width:300px){
+    
+    .container
+    {
+    grid-template-areas: 
+    'photo intro intro '
+    'intro intro intro'
+    'link link link';
+    }
+  
 }
